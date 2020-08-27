@@ -1,0 +1,218 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: 70px;
+    left: 0;
+    top: 0;
+}
+
+.nav-wrapper {
+    top: 0;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+.nav-wrapper h1 {
+    font-family: Istok Web, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    color: #3878F4;
+}
+
+.left-side, .right-side {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-name {
+    width: 34%;
+}
+
+.nav-wrapper .left-side a {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #323232;
+    white-space: nowrap
+}
+
+.nav-wrapper .right-side a {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: black;
+    white-space: nowrap
+}
+
+.nav-wrapper .left-side * {
+    padding-right: 35px;
+}
+
+.nav-wrapper .right-side * {
+    padding-left: 35px;
+}
+
+.nav-wrapper .left-side a:hover, .nav-wrapper .left-side a:active {
+    color: #3878F4;
+}
+
+.nav-wrapper .left-side svg:hover > rect, .nav-wrapper .left-side svg:active > rect {
+    fill: #3878F4;
+}
+
+.nav-wrapper .right-side a:hover, .nav-wrapper .right-side a:active {
+    color: rgba(50, 50, 50, 0.6);
+}
+
+.nav-wrapper .right-side svg:hover > rect, .nav-wrapper .right-side svg:active > rect {
+    fill: rgba(50, 50, 50, 0.6);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../images/header-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+.content .header .left-side, .content .header .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .header .heading {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 0.02em;
+    color: #323232;
+}
+
+.content .header .sub-heading {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #323232;
+    padding-top: 15px;
+}
+
+.content .header .button-section {
+    padding-top: 35px;
+    width: 100%;
+}
+
+.content .header .button-section button {
+    width: 215px;
+    height: 49px;
+    left: 240px;
+    top: 487px;
+    background: #3878F4;
+    border-radius: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.content .header .left-side .heading,
+.content .header .left-side .sub-heading,
+.content .header .left-side .button-section {
+    text-align: start;
+}
+
+.content .header .right-side .heading,
+.content .header .right-side .sub-heading,
+.content .header .right-side .button-section {
+    text-align: end;
+    opacity: 0.65;
+}
+
+.service-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service-wrapper .left-side, .service-wrapper .right-side {
+    padding-top: 189px;
+    width: 50%;
+}
+
+.service-wrapper .left-side {
+    justify-content: flex-end;
+}
+
+.service-wrapper .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.service-wrapper .left-side img{
+    width: 78%;
+}
+
+.service-wrapper .right-side .description {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: #323232;
+    text-align: start;
+    padding-left: 115px;
+    width: 78%;
+}
+
+.service-wrapper .right-side .know-more-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 78%;
+    padding-left: 115px;
+    padding-top: 50px;
+}
+
+.service-wrapper .right-side .know-more-wrapper .know-more {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #3878F4;
+}

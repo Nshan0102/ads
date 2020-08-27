@@ -1,58 +1,101 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+    <div class="nav-container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <a href="#">
+                    <svg width="22" height="16" viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="22" height="2" fill="#323232"/>
+                        <rect y="7" width="16" height="2" fill="#323232"/>
+                        <rect y="14" width="22" height="2" fill="#323232"/>
+                    </svg>
+                </a>
+                <a href="#">О сервисе</a>
+                <a href="#">Купить</a>
+                <a href="#">Продать</a>
+            </div>
+            <div class="company-name">
+                <a href="#">
+                    <h1>Digital Threads</h1>
+                </a>
+            </div>
+            <div class="right-side">
+                <a href="#">Правила</a>
+                <a href="#">
+                    <img src="../assets/images/search.svg" alt="search"/>
+                </a>
+                <a href="#">
+                    <img src="../assets/images/support.svg" alt="support"/>
+                </a>
+                <a href="#">
+                    <img src="../assets/images/account.svg" alt="account"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <div class="left-side">
+                <div class="heading">
+                    Привлекательные
+                    аккаунты для всех
+                </div>
+                <div class="sub-heading">
+                    Приобретите любой аккаунт по самой выгодной цене всего за 5 минут!
+                </div>
+                <div class="button-section">
+                    <button>
+                        Хочу купить
+                    </button>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="heading">
+                    Лучший сервис для продажи аккаунтов
+                </div>
+                <div class="sub-heading">
+                    Если вы не знаете как и где можно продать свой аккаунт, тогда вам к нам!
+                </div>
+                <div class="button-section">
+                    <button>
+                        Хочу продать
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="service-wrapper">
+            <div class="left-side">
+                <img src="../assets/images/service.png" alt="">
+            </div>
+            <div class="right-side">
+                <div class="description">
+                    DigitalThreads - сервис
+                    облегчающий процесс поиска,
+                    покупки и продажи аккаунтов
+                    по всему миру!
+                </div>
+                <div class="know-more-wrapper">
+                    <a class="know-more" href="#">
+                        Узнать больше
+                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5H15M15 5L11 1M15 5L11 9" stroke="#3878F4" stroke-width="1.5" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
-}
+    export default {
+        name: 'HelloWorld',
+        props: {
+            msg: String
+        }
+    }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
